@@ -1,0 +1,25 @@
+   $bgheader:#FFB8CA;
+   $colorEllipse:#FFA5BA;
+   $colorWhite:#FFFFFF;
+   $colorText:#D41443;
+    body{
+        margin: 0 auto;
+
+        @media screen and(min-width:320px) {
+            width: 320px;
+        }
+
+        @media screen and(min-width:700px) {
+            width: 700px;
+        }
+        
+        @media screen and(min-width:1120px) {
+            width: 1120px;
+        }
+    }
+
+    ul,
+    li,
+    h1{
+        margin: 0;
+    }

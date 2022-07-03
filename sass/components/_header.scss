@@ -1,0 +1,56 @@
+
+header{
+    overflow: hidden;
+    background-color: $bgheader;
+    padding: 6px 20px 0 20px;
+
+    nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .logo {
+                display: inline-flex;
+            }
+    }
+    
+    .ellipse {
+        position: relative;
+        background-color: $colorEllipse;
+        width: 346px;
+        height: 344px;
+        border-radius: 50%;
+        margin-top: 27px;
+        margin-left: 36px;
+        margin-bottom:75px ;
+
+        img{
+            margin-top: 9px;
+            margin-left: 81px;
+        }
+
+    }
+
+    h1{
+        position: absolute;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 0;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $colorWhite;
+        width: 218px;
+        top:50%;
+        transform: translateY(-50%);
+        
+        span{           
+            font-size: 48px;
+            line-height: 96.5%;
+            /* or 46px */
+            color: $colorText;
+        }
+    }
+
+}
+
