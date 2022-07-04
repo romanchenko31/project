@@ -8,9 +8,9 @@ body {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   body {
-    width: 700px;
+    width: 768px;
   }
 }
 
@@ -24,12 +24,22 @@ ul,
 li,
 h1 {
   margin: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   overflow: hidden;
   background-color: #FFB8CA;
   padding: 6px 20px 0 20px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 37px 34px;
+  }
 }
 
 header nav {
@@ -50,20 +60,118 @@ header nav .logo {
   display: inline-flex;
 }
 
+header nav .menu-mobile,
+header nav button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+header nav .buttom-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .menu .menu-mobile {
+    margin-right: 30px;
+  }
+  header nav .buttom-tablet {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-color: #FFFFFF;
+    color: #D41443;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 40px;
+    border-radius: 22px;
+  }
+  header nav .buttom-tablet:hover {
+    background-color: #D41443;
+    color: #FFFFFF;
+  }
+  header nav .buttom-tablet:after {
+    content: "";
+    background-image: url(../../image/Vector.png);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 10px;
+    margin-left: 12px;
+  }
+}
+
 header .ellipse {
-  position: relative;
   background-color: #FFA5BA;
   width: 346px;
   height: 344px;
   border-radius: 50%;
   margin-top: 27px;
-  margin-left: 36px;
+  margin-left: 16px;
   margin-bottom: 75px;
 }
 
-header .ellipse img {
-  margin-top: 9px;
-  margin-left: 81px;
+@media screen and (min-width: 768px) {
+  header .ellipse {
+    margin-top: -45px;
+    margin-left: 273px;
+  }
+}
+
+header picture {
+  max-width: 100%;
+  position: absolute;
+  top: 92px;
+  left: 117px;
+}
+
+@media screen and (min-width: 768px) {
+  header picture {
+    top: 63px;
+    left: 378px;
+  }
+}
+
+header .list {
+  position: absolute;
+  bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  header .list {
+    top: 202px;
+  }
+}
+
+header .list .item {
+  border-radius: 20px;
+}
+
+header .list .item:hover button {
+  background-color: #D41443;
+  color: #FFFFFF;
+}
+
+header .list .item button {
+  outline: none;
+  border-radius: 20px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  background-color: #FFFFFF;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #D41443;
+}
+
+header .list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 header h1 {
@@ -71,14 +179,19 @@ header h1 {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 26px;
-  line-height: 0;
+  line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 218px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 193px;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    top: 102px;
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
 
 header h1 span {
@@ -86,5 +199,12 @@ header h1 span {
   line-height: 96.5%;
   /* or 46px */
   color: #D41443;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 span {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

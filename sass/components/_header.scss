@@ -4,6 +4,11 @@ header{
     background-color: $bgheader;
     padding: 6px 20px 0 20px;
 
+    @media screen and (min-width:768px) {
+        padding: 37px 34px;
+    }
+    position: relative;
+
     nav {
             display: flex;
             align-items: center;
@@ -12,45 +17,157 @@ header{
             .logo {
                 display: inline-flex;
             }
+
+            .menu-mobile,
+             button{
+                outline: none;
+                background-color: transparent;
+                border: none;
+            }
+            .buttom-tablet{
+                display: none;
+            }
+            @media screen and (min-width:768px) {
+                
+                .menu {
+                    .menu-mobile {
+                        margin-right: 30px;
+                    }
+                }
+
+                .buttom-tablet {
+                    display: inline-flex;
+                    background-color: $colorWhite;
+                    color: $colorText;
+                    align-items: center;
+                    padding: 15px 40px;
+                    border-radius: 22px;
+
+                    &:hover{
+                        background-color: $colorText;
+                        color: $colorWhite;
+                    }
+ 
+                    &:after {
+                        content: "";
+                        background-image: url(../../image/Vector.png);
+                        background-repeat: no-repeat;
+                        width: 8px;
+                        height: 10px;
+                        margin-left: 12px;
+     
+                    }
+                   
+                }
+
+                
+           }
+            
     }
     
     .ellipse {
-        position: relative;
         background-color: $colorEllipse;
         width: 346px;
         height: 344px;
         border-radius: 50%;
         margin-top: 27px;
-        margin-left: 36px;
+        margin-left: 16px;
         margin-bottom:75px ;
 
-        img{
-            margin-top: 9px;
-            margin-left: 81px;
+        @media screen and (min-width:768px) {
+            margin-top:-45px;
+            margin-left: 273px;
+        }
+    }
+
+
+        picture{
+            max-width: 100%;
+            position: absolute;
+            top:92px;
+            left: 117px;
+
+            @media screen and (min-width:768px) {
+                top:63px;
+                left: 378px;
+            }
         }
 
-    }
+        .list{
+            position: absolute;
+            bottom: 160px;
+            display:flex;
+
+            @media screen and(min-width:768px) {
+                top:202px;
+            }
+
+            .item{
+                border-radius: 20px;
+
+                &:hover button{
+                    background-color: $colorText;
+                    color:$colorWhite;
+                }
+                
+                & button{
+                    outline: none;
+                    border-radius: 20px;
+                    padding: 9px 16px;
+                    border: 1px solid transparent;
+                    background-color: $colorWhite;
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-align: center;
+                    color: $colorText;
+                }
+            }
+
+            .item:not(:last-child){
+                margin-right: 8px;
+            }
+
+
+        }
+
+    
 
     h1{
         position: absolute;
         font-family: 'Titan One';
         font-weight: 400;
         font-size: 26px;
-        line-height: 0;
+        line-height: 30px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: $colorWhite;
-        width: 218px;
-        top:50%;
-        transform: translateY(-50%);
+        top:193px;
+
+
+        @media screen and (min-width:768px) {
+                top:102px;
+                font-size: 22px;
+                line-height: 25px;
+            }
         
         span{           
             font-size: 48px;
             line-height: 96.5%;
             /* or 46px */
             color: $colorText;
-        }
-    }
+
+            @media screen and (min-width:768px) {
+                font-size: 34px;
+                line-height: 90.5%;
+
+            }
+
+    }    }   
 
 }
+
+
 
