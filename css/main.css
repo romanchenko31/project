@@ -14,9 +14,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
   body {
-    width: 1120px;
+    width: 1200px;
   }
 }
 
@@ -29,6 +29,10 @@ h1 {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 header {
   overflow: hidden;
   background-color: #FFB8CA;
@@ -38,7 +42,14 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 37px 34px;
+    padding: 37px 34px 0 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 627px;
+    padding: 37px 46px 0 46px;
   }
 }
 
@@ -115,20 +126,39 @@ header .ellipse {
   header .ellipse {
     margin-top: -45px;
     margin-left: 273px;
+    margin-bottom: 0;
   }
 }
 
-header picture {
-  max-width: 100%;
+@media screen and (min-width: 1200px) {
+  header .ellipse {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 538px;
+    height: 538px;
+    bottom: 75px;
+    right: 267px;
+  }
+}
+
+header .ice {
   position: absolute;
   top: 92px;
   left: 117px;
 }
 
 @media screen and (min-width: 768px) {
-  header picture {
+  header .ice {
     top: 63px;
     left: 378px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .ice {
+    top: 108px;
+    left: 594px;
   }
 }
 
@@ -143,6 +173,13 @@ header .list {
 @media screen and (min-width: 768px) {
   header .list {
     top: 202px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .list {
+    top: 333px;
+    left: 115px;
   }
 }
 
@@ -168,6 +205,14 @@ header .list .item button {
   line-height: 10px;
   text-align: center;
   color: #D41443;
+}
+
+@media screen and (min-width: 1200px) {
+  header .list .item button {
+    padding: 15px 21px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 header .list .item:not(:last-child) {
@@ -205,6 +250,140 @@ header h1 span {
   header h1 span {
     font-size: 34px;
     line-height: 90.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header h1 {
+    font-size: 38px;
+    line-height: 44px;
+    top: 171px;
+    left: 115px;
+  }
+  header h1 span {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+}
+
+header .tablet-style {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style {
+    display: block;
+  }
+  header .tablet-style .milk {
+    max-width: 100%;
+    left: 34px;
+    bottom: 28px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .milk {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style .description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    width: 114px;
+    position: absolute;
+    left: 154px;
+    bottom: 59px;
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .description {
+    left: 295px;
+    bottom: 102px;
+    font-size: 14px;
+    line-height: 140%;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style .arrow {
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    bottom: 34px;
+    left: 154px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .arrow {
+    left: 295px;
+    bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style .girl {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+  }
+  header .tablet-style .count {
+    position: absolute;
+    top: 94px;
+    right: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .count {
+    right: 97px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style .count .item {
+    text-align: right;
+  }
+  header .tablet-style .count .item .cafe {
+    width: 43px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .count .item .cafe {
+    width: 72px;
+    height: 77px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .tablet-style .count .item .food {
+    width: 51px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  header .tablet-style .count .item .food {
+    width: 92px;
+    height: 76px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,21 +29,47 @@
         </div>
       </nav>
       <div class="ellipse"></div>
-        <picture>
-            <source srcset="./image/ice-desctop.png" media="(min-width:1120px)">     
-            <source srcset="./image/ice-tablet.png" media="(min-width:768px)" >
-            <source srcset="./image/ice-cream-mobil.png" media="(min-width:320px)">
-            <img src="./image/ice-cream-mobil.png" alt="ice-cream">
+      <picture class="ice">
+        <source srcset="./image/ice-desctop.png" media="(min-width:1200px)">     
+        <source srcset="./image/ice-tablet.png" media="(min-width:768px)" >
+        <source srcset="./image/ice-cream-mobil.png" media="(min-width:320px)">
+        <img src="./image/ice-cream-mobil.png" alt="ice-cream">
+      </picture>
+      <h1>
+        ice cream <br> made with<br><span> passion <span>
+      </h1>
+      <ul class="list">
+        <li class="item"><button>Products</button></li>
+        <li class="item"><button>How it’s made?</button></li>
+      </ul>
+      <div class="tablet-style">
+        <picture  class="milk">
+          <source srcset="./image/milk1200.png" media="(min-width:1200px)">
+          <source srcset="./image/milk.png" media="(min-width:768px)">        
+          <img src="./image/milk.png"  alt="milk">
         </picture>
-        <h1>
-          ice cream <br> made with<br><span> passion <span>
-        </h1>
-        <ul class="list">
-          <li class="item"><button>Products</button></li>
-          <li class="item"><button>How it’s made?</button></li>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <button class="arrow">
+          <img src="./image/arrow-right.png" width="18" height="18" alt="раскрыть текст">
+        </button>
+        <picture class="girl">
+          <source srcset="./image/girlDesctop.png" media="(min-width:1200px)">
+          <source srcset="./image/girl.png 1x, ./image/girl@2x.png 2x" media="(min-width:768px)">
+          <img class="girl-ice" src="./image/girl.png" alt="girl">
+        </picture>
+        <ul class="count">
+          <li class="item">
+            <svg class="cafe" width="43" height="44">
+              <use href="./image/svg-header.svg#icon-Group-22"></use>
+            </svg>
+          </li>
+          <li class="item">
+            <svg class="food" width="51" height="43">
+              <use href="./image/svg-header.svg#icon-Group-23"></use>
+            </svg>
+          </li>
         </ul>
-      
-              
+      </div>
     </header>
     <main></main>
 </body>

@@ -13,8 +13,8 @@
             width: 768px;
         }
         
-        @media screen and(min-width:1120px) {
-            width: 1120px;
+        @media screen and(min-width:1200px) {
+            width: 1200px;
         }
     }
 
@@ -25,4 +25,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+    }
+    img{
+        display: block;
     }

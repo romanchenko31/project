@@ -5,7 +5,12 @@ header{
     padding: 6px 20px 0 20px;
 
     @media screen and (min-width:768px) {
-        padding: 37px 34px;
+        padding: 37px 34px 0 34px;
+    }
+
+    @media screen and(min-width:1200px) {
+        height: 627px;
+        padding: 37px 46px 0 46px;
     }
     position: relative;
 
@@ -77,12 +82,23 @@ header{
         @media screen and (min-width:768px) {
             margin-top:-45px;
             margin-left: 273px;
+            margin-bottom: 0;
         }
+
+        @media screen and (min-width:1200px) {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 538px;
+            height: 538px;
+            bottom: 75px;
+            right: 267px;
+        }
+        
     }
 
 
-        picture{
-            max-width: 100%;
+        .ice{
             position: absolute;
             top:92px;
             left: 117px;
@@ -91,6 +107,13 @@ header{
                 top:63px;
                 left: 378px;
             }
+
+            @media screen and (min-width:1200px) {
+                top:108px;
+                left: 594px;
+            }
+
+
         }
 
         .list{
@@ -100,6 +123,11 @@ header{
 
             @media screen and(min-width:768px) {
                 top:202px;
+            }
+
+            @media screen and(min-width:1200px) {
+                top:333px;
+                left: 115px;
             }
 
             .item{
@@ -123,6 +151,12 @@ header{
                     line-height: 10px;
                     text-align: center;
                     color: $colorText;
+                        
+                    @media screen and(min-width:1200px) {
+                        padding: 15px 21px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
                 }
             }
 
@@ -151,7 +185,7 @@ header{
                 top:102px;
                 font-size: 22px;
                 line-height: 25px;
-            }
+        }
         
         span{           
             font-size: 48px;
@@ -160,12 +194,128 @@ header{
             color: $colorText;
 
             @media screen and (min-width:768px) {
-                font-size: 34px;
+              font-size: 34px;
+              line-height: 90.5%;
+
+            }
+        } 
+        
+        @media screen and(min-width:1200px) {
+            font-size: 38px;
+            line-height: 44px;
+            top:171px;
+            left: 115px;
+
+            span{
+                font-size: 58px;
                 line-height: 90.5%;
+            }
+        }
+    }      
+
+    .tablet-style{
+        display: none;
+       
+
+        @media screen and (min-width:768px) {
+
+            display: block;
+             
+            .milk{
+                max-width: 100%;;
+                left:34px ;
+                bottom: 28px;
+                position: absolute;
+
+                @media screen and (min-width:1200px) {
+                    left: 77px;
+                    bottom: 45px;
+                }
+
+                
+            }
+            .description{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 150%;
+                margin: 0;
+                padding: 0;
+                width: 114px;
+                position: absolute;
+                left: 154px;
+                bottom: 59px;
+                color: $colorWhite;
+
+                @media screen and(min-width:1200px) {
+                    left: 295px;
+                    bottom: 102px;
+                    font-size: 14px;
+                    line-height: 140%;
+                    width: 200px;
+                }
+            }
+            .arrow{
+                position: absolute;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                margin: 0;
+                padding:0;
+                bottom: 34px;
+                left: 154px;
+
+                @media screen and(min-width:1200px) {
+                        left: 295px;
+                        bottom: 56px;
+                }
 
             }
 
-    }    }   
+            .girl{
+                max-width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 34px;
+            }
+
+            .count{
+                position: absolute;
+                top:94px;
+                right: 34px;
+
+                @media screen and(min-width:1200px) {
+                    right: 97px;
+                }
+
+                .item{
+                    text-align: right;
+
+                    .cafe{
+                        width: 43px;
+                        height: 44px;
+                        @media screen and(min-width:1200px) {
+                                width: 72px;
+                                height: 77px;
+                        }
+
+                    }
+
+                    .food{
+                        width: 51px;
+                        height: 44px;
+                        @media screen and(min-width:1200px) {
+                                width: 92px;
+                                height: 76px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
 
 }
 
