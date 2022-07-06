@@ -8,7 +8,7 @@ header{
         padding: 37px 34px 0 34px;
     }
 
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:1280px) {
         height: 627px;
         padding: 37px 46px 0 46px;
     }
@@ -23,12 +23,13 @@ header{
                 display: inline-flex;
             }
 
-            .menu-mobile,
-             button{
-                outline: none;
-                background-color: transparent;
-                border: none;
+            @media screen and (min-width:1280px){
+                .menu-mobile {
+                    display: none;
+                }
             }
+        
+
             .buttom-tablet{
                 display: none;
             }
@@ -85,7 +86,7 @@ header{
             margin-bottom: 0;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             position: absolute;
             margin: 0;
             padding: 0;
@@ -108,7 +109,7 @@ header{
                 left: 378px;
             }
 
-            @media screen and (min-width:1200px) {
+            @media screen and (min-width:1280px) {
                 top:108px;
                 left: 594px;
             }
@@ -125,7 +126,7 @@ header{
                 top:202px;
             }
 
-            @media screen and(min-width:1200px) {
+            @media screen and(min-width:1280px) {
                 top:333px;
                 left: 115px;
             }
@@ -152,7 +153,7 @@ header{
                     text-align: center;
                     color: $colorText;
                         
-                    @media screen and(min-width:1200px) {
+                    @media screen and(min-width:1280px) {
                         padding: 15px 21px;
                         font-size: 14px;
                         line-height: 18px;
@@ -200,7 +201,7 @@ header{
             }
         } 
         
-        @media screen and(min-width:1200px) {
+        @media screen and(min-width:1280px) {
             font-size: 38px;
             line-height: 44px;
             top:171px;
@@ -227,7 +228,7 @@ header{
                 bottom: 28px;
                 position: absolute;
 
-                @media screen and (min-width:1200px) {
+                @media screen and (min-width:1280px) {
                     left: 77px;
                     bottom: 45px;
                 }
@@ -248,7 +249,7 @@ header{
                 bottom: 59px;
                 color: $colorWhite;
 
-                @media screen and(min-width:1200px) {
+                @media screen and(min-width:1280px) {
                     left: 295px;
                     bottom: 102px;
                     font-size: 14px;
@@ -257,6 +258,7 @@ header{
                 }
             }
             .arrow{
+                max-width: 100%;
                 position: absolute;
                 background-color: transparent;
                 outline: none;
@@ -266,7 +268,7 @@ header{
                 bottom: 34px;
                 left: 154px;
 
-                @media screen and(min-width:1200px) {
+                @media screen and(min-width:1280px) {
                         left: 295px;
                         bottom: 56px;
                 }
@@ -285,7 +287,8 @@ header{
                 top:94px;
                 right: 34px;
 
-                @media screen and(min-width:1200px) {
+                @media screen and(min-width:1280px) {
+                    top:156px;
                     right: 97px;
                 }
 
@@ -295,7 +298,7 @@ header{
                     .cafe{
                         width: 43px;
                         height: 44px;
-                        @media screen and(min-width:1200px) {
+                        @media screen and(min-width:1280px) {
                                 width: 72px;
                                 height: 77px;
                         }
@@ -305,7 +308,7 @@ header{
                     .food{
                         width: 51px;
                         height: 44px;
-                        @media screen and(min-width:1200px) {
+                        @media screen and(min-width:1280px) {
                                 width: 92px;
                                 height: 76px;
                         }
@@ -316,6 +319,30 @@ header{
         }
 
     }
+
+    .menu-desctop{
+        z-index: 999;
+        display: flex;
+        @media screen and (max-width:1279px) {
+            display: none;
+        }
+
+        .item:not(:last-child){
+            margin-right: 35px;
+        }
+
+        .link{
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            color:$colorWhite;
+        }
+        .link.current{
+            color:$colorText;
+        }
+    }
+    
 
 }
 

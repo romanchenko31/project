@@ -14,15 +14,18 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   body {
-    width: 1200px;
+    width: 1280px;
   }
 }
 
 ul,
 li,
-h1 {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   list-style: none;
   margin: 0;
@@ -31,6 +34,16 @@ h1 {
 
 img {
   display: block;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -46,7 +59,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header {
     height: 627px;
     padding: 37px 46px 0 46px;
@@ -71,11 +84,10 @@ header nav .logo {
   display: inline-flex;
 }
 
-header nav .menu-mobile,
-header nav button {
-  outline: none;
-  background-color: transparent;
-  border: none;
+@media screen and (min-width: 1280px) {
+  header nav .menu-mobile {
+    display: none;
+  }
 }
 
 header nav .buttom-tablet {
@@ -130,7 +142,7 @@ header .ellipse {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header .ellipse {
     position: absolute;
     margin: 0;
@@ -155,7 +167,7 @@ header .ice {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header .ice {
     top: 108px;
     left: 594px;
@@ -176,7 +188,7 @@ header .list {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header .list {
     top: 333px;
     left: 115px;
@@ -207,7 +219,7 @@ header .list .item button {
   color: #D41443;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header .list .item button {
     padding: 15px 21px;
     font-size: 14px;
@@ -253,7 +265,7 @@ header h1 span {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header h1 {
     font-size: 38px;
     line-height: 44px;
@@ -282,7 +294,7 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .milk {
     left: 77px;
     bottom: 45px;
@@ -306,7 +318,7 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .description {
     left: 295px;
     bottom: 102px;
@@ -318,6 +330,7 @@ header .tablet-style {
 
 @media screen and (min-width: 768px) {
   header .tablet-style .arrow {
+    max-width: 100%;
     position: absolute;
     background-color: transparent;
     outline: none;
@@ -329,7 +342,7 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .arrow {
     left: 295px;
     bottom: 56px;
@@ -350,8 +363,9 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .count {
+    top: 156px;
     right: 97px;
   }
 }
@@ -366,7 +380,7 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .count .item .cafe {
     width: 72px;
     height: 77px;
@@ -380,10 +394,239 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1280px) {
   header .tablet-style .count .item .food {
     width: 92px;
     height: 76px;
+  }
+}
+
+header .menu-desctop {
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1279px) {
+  header .menu-desctop {
+    display: none;
+  }
+}
+
+header .menu-desctop .item:not(:last-child) {
+  margin-right: 35px;
+}
+
+header .menu-desctop .link {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+header .menu-desctop .link.current {
+  color: #D41443;
+}
+
+.container {
+  margin-top: 121px;
+}
+
+.container .product-description {
+  color: #FFA5BA;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .product-description {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .product-description {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.container .product-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+  margin-bottom: 144px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .product-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .product-title {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .products {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .products {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.container .products .item {
+  margin-bottom: 129px;
+  background-color: #FFB8CA;
+  padding: 161px 53px 41px 53px;
+  border-radius: 24px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .container .products .item {
+    width: calc((100%-6*10px)/3);
+    margin: 10px;
+    padding: 152px 0 40px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .products .item {
+    width: calc((100%-3*25px)/3);
+    margin: 12.5px;
+    padding: 163px 44px 50px 44px;
+  }
+}
+
+.container .products .item:nth-child(2) {
+  background-color: #F0D1A5;
+}
+
+.container .products .item:nth-child(3) {
+  background-color: #C2E297;
+}
+
+.container .products .item-name {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .container .products .item-name {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.container .products .item-description {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .products .item-description {
+    padding-left: 11px;
+    padding-right: 11px;
+    line-height: 176%;
+  }
+}
+
+.container .products .menu-cicle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.container .products .menu-cicle .cicle:not(:last-child) {
+  margin-right: 4px;
+}
+
+.container .products .product-arrow {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .products .img-ice {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .container .products .img-ice {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container .products .img-ice {
+    -webkit-transform: translateY(-62%);
+            transform: translateY(-62%);
   }
 }
 /*# sourceMappingURL=main.css.map */

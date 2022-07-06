@@ -13,14 +13,17 @@
             width: 768px;
         }
         
-        @media screen and(min-width:1200px) {
-            width: 1200px;
+        @media screen and(min-width:1280px) {
+            width: 1280px;
         }
     }
 
     ul,
     li,
-    h1{
+    h1,
+    h2,
+    h3,
+    p{
         margin: 0;
         list-style: none;
         margin: 0;
@@ -28,4 +31,12 @@
     }
     img{
         display: block;
+    }
+    button {
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+    a{
+        text-decoration: none;
     }

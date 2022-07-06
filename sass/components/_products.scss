@@ -1,0 +1,169 @@
+.container{
+    margin-top: 121px;
+        @media screen and (min-width:768px) {
+           
+        }
+
+    .product-description{
+        color: $colorEllipse;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media screen and (min-width:768px) {
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        @media screen and (min-width:1280px) {
+            font-size: 30px;
+            line-height: 34px;
+        }
+    }
+
+    .product-title{
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $colorText;
+        margin-bottom: 144px;
+
+        @media screen and (min-width:768px) {
+            font-size: 48px;
+            line-height: 55px;
+        }
+
+        @media screen and (min-width:1280px) {
+            font-size: 58px;
+            line-height: 66px;
+        }
+
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        @media screen and(min-width:768px) {
+            flex-wrap: nowrap;
+            padding-left: 34px;
+            padding-right: 34px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        @media screen and (min-width:1280px) {
+            padding-left: 115px;
+            padding-right: 115px;
+        }
+
+
+        .item{
+
+            @media screen and (min-width:768px) {
+                width: calc((100%-6*10px)/3); 
+                margin: 10px; 
+                padding: 152px 0 40px 0; 
+            }
+
+            @media screen and (min-width:1280px) {
+                width: calc((100%-3*25px)/3);
+                margin: 12.5px;
+                padding: 163px 44px 50px 44px;
+            }
+
+            margin-bottom: 129px;
+            background-color: $bgheader;
+            padding: 161px 53px 41px 53px;
+            border-radius: 24px;
+            position: relative;
+
+            &:nth-child(2){
+                background-color: #F0D1A5;
+            }
+            &:nth-child(3){
+                background-color: #C2E297;
+            }
+        }
+   
+        .item-name{
+            font-family: 'Titan One';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $colorWhite;
+            margin-bottom: 30px;
+
+            @media screen and(min-width:1280px) {
+                font-size: 30px;
+                line-height: 34px;
+            }
+        }
+        .item-description{
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 152%;
+            /* or 21px */   
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: $colorWhite;
+            margin-bottom: 30px;
+
+            @media screen and (min-width:768px) {
+                padding-left: 11px;
+                padding-right: 11px;
+                line-height: 176%;
+            }
+
+        }
+
+        .menu-cicle{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .cicle:not(:last-child){
+                margin-right: 4px;
+            }
+        }
+
+        .product-arrow{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .img-ice{
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 16px;
+            transform: translateY(-50%);
+
+            @media screen and (min-width:768px) {
+                left: 0;
+            }
+
+            @media screen and (min-width:1280px) {
+                transform: translateY(-62%);
+            }
+
+        }
+    }
+}
