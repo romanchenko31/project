@@ -1,22 +1,26 @@
-body {
+.header-wrap,
+.container {
   margin: 0 auto;
 }
 
 @media screen and (min-width: 320px) {
-  body {
+  .header-wrap,
+  .container {
     width: 320px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .header-wrap,
+  .container {
     width: 768px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  body {
-    width: 1280px;
+@media screen and (min-width: 1120px) {
+  .header-wrap,
+  .container {
+    width: 1120px;
   }
 }
 
@@ -40,6 +44,7 @@ button {
   outline: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 a {
@@ -49,24 +54,29 @@ a {
 header {
   overflow: hidden;
   background-color: #FFB8CA;
-  padding: 6px 20px 0 20px;
-  position: relative;
+}
+
+.header-wrap {
+  padding-top: 6px;
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    padding: 37px 34px 0 34px;
+  .header-wrap {
+    padding-top: 38px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  header {
+.header {
+  position: relative;
+}
+
+@media screen and (min-width: 1120px) {
+  .header {
     height: 627px;
-    padding: 37px 46px 0 46px;
   }
 }
 
-header nav {
+.header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,27 +88,27 @@ header nav {
           justify-content: space-between;
 }
 
-header nav .logo {
+.header nav .logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-@media screen and (min-width: 1280px) {
-  header nav .menu-mobile {
+@media screen and (min-width: 1120px) {
+  .header nav .menu-mobile {
     display: none;
   }
 }
 
-header nav .buttom-tablet {
+.header nav .buttom-tablet {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header nav .menu .menu-mobile {
+  .header nav .menu .menu-mobile {
     margin-right: 30px;
   }
-  header nav .buttom-tablet {
+  .header nav .buttom-tablet {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -110,11 +120,11 @@ header nav .buttom-tablet {
     padding: 15px 40px;
     border-radius: 22px;
   }
-  header nav .buttom-tablet:hover {
+  .header nav .buttom-tablet:hover {
     background-color: #D41443;
     color: #FFFFFF;
   }
-  header nav .buttom-tablet:after {
+  .header nav .buttom-tablet:after {
     content: "";
     background-image: url(../../image/Vector.png);
     background-repeat: no-repeat;
@@ -124,7 +134,7 @@ header nav .buttom-tablet {
   }
 }
 
-header .ellipse {
+.header .ellipse {
   background-color: #FFA5BA;
   width: 346px;
   height: 344px;
@@ -135,76 +145,76 @@ header .ellipse {
 }
 
 @media screen and (min-width: 768px) {
-  header .ellipse {
+  .header .ellipse {
     margin-top: -45px;
     margin-left: 273px;
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  header .ellipse {
+@media screen and (min-width: 1120px) {
+  .header .ellipse {
     position: absolute;
     margin: 0;
     padding: 0;
     width: 538px;
     height: 538px;
     bottom: 75px;
-    right: 267px;
+    right: 168px;
   }
 }
 
-header .ice {
+.header .ice {
   position: absolute;
   top: 92px;
   left: 117px;
 }
 
 @media screen and (min-width: 768px) {
-  header .ice {
+  .header .ice {
     top: 63px;
     left: 378px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  header .ice {
+@media screen and (min-width: 1120px) {
+  .header .ice {
     top: 108px;
     left: 594px;
   }
 }
 
-header .list {
+.header .list {
   position: absolute;
-  bottom: 160px;
+  top: 313px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (min-width: 768px) {
-  header .list {
+  .header .list {
     top: 202px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  header .list {
+@media screen and (min-width: 1120px) {
+  .header .list {
     top: 333px;
     left: 115px;
   }
 }
 
-header .list .item {
+.header .list .item {
   border-radius: 20px;
 }
 
-header .list .item:hover button {
+.header .list .item:hover button {
   background-color: #D41443;
   color: #FFFFFF;
 }
 
-header .list .item button {
+.header .list .item button {
   outline: none;
   border-radius: 20px;
   padding: 9px 16px;
@@ -219,19 +229,19 @@ header .list .item button {
   color: #D41443;
 }
 
-@media screen and (min-width: 1280px) {
-  header .list .item button {
+@media screen and (min-width: 1120px) {
+  .header .list .item button {
     padding: 15px 21px;
     font-size: 14px;
     line-height: 18px;
   }
 }
 
-header .list .item:not(:last-child) {
+.header .list .item:not(:last-child) {
   margin-right: 8px;
 }
 
-header h1 {
+.header h1 {
   position: absolute;
   font-family: 'Titan One';
   font-weight: 400;
@@ -244,14 +254,14 @@ header h1 {
 }
 
 @media screen and (min-width: 768px) {
-  header h1 {
+  .header h1 {
     top: 102px;
     font-size: 22px;
     line-height: 25px;
   }
 }
 
-header h1 span {
+.header h1 span {
   font-size: 48px;
   line-height: 96.5%;
   /* or 46px */
@@ -259,34 +269,34 @@ header h1 span {
 }
 
 @media screen and (min-width: 768px) {
-  header h1 span {
+  .header h1 span {
     font-size: 34px;
     line-height: 90.5%;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  header h1 {
+@media screen and (min-width: 1120px) {
+  .header h1 {
     font-size: 38px;
     line-height: 44px;
     top: 171px;
     left: 115px;
   }
-  header h1 span {
+  .header h1 span {
     font-size: 58px;
     line-height: 90.5%;
   }
 }
 
-header .tablet-style {
+.header .tablet-style {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header .tablet-style {
+  .header .tablet-style {
     display: block;
   }
-  header .tablet-style .milk {
+  .header .tablet-style .milk {
     max-width: 100%;
     left: 34px;
     bottom: 28px;
@@ -294,15 +304,15 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .milk {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
+  .header .tablet-style .milk {
     left: 77px;
     bottom: 45px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  header .tablet-style .description {
+  .header .tablet-style .description {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -318,8 +328,8 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .description {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
+  .header .tablet-style .description {
     left: 295px;
     bottom: 102px;
     font-size: 14px;
@@ -329,7 +339,7 @@ header .tablet-style {
 }
 
 @media screen and (min-width: 768px) {
-  header .tablet-style .arrow {
+  .header .tablet-style .arrow {
     max-width: 100%;
     position: absolute;
     background-color: transparent;
@@ -342,83 +352,73 @@ header .tablet-style {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .arrow {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
+  .header .tablet-style .arrow {
     left: 295px;
     bottom: 56px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  header .tablet-style .girl {
+  .header .tablet-style .girl {
     max-width: 100%;
     position: absolute;
     bottom: 0;
     right: 34px;
   }
-  header .tablet-style .count {
+  .header .tablet-style .count {
     position: absolute;
     top: 94px;
-    right: 34px;
+    right: 0px;
   }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .count {
-    top: 156px;
-    right: 97px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header .tablet-style .count .item {
+  .header .tablet-style .count .item {
     text-align: right;
   }
-  header .tablet-style .count .item .cafe {
+  .header .tablet-style .count .item .cafe {
     width: 43px;
     height: 44px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .count .item .cafe {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
+  .header .tablet-style .count .item .cafe {
     width: 72px;
     height: 77px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  header .tablet-style .count .item .food {
+  .header .tablet-style .count .item .food {
     width: 51px;
     height: 44px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1280px) {
-  header .tablet-style .count .item .food {
+@media screen and (min-width: 768px) and (min-width: 1120px) {
+  .header .tablet-style .count .item .food {
     width: 92px;
     height: 76px;
   }
 }
 
-header .menu-desctop {
+.header .menu-desctop {
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@media screen and (max-width: 1279px) {
-  header .menu-desctop {
+@media screen and (max-width: 1119px) {
+  .header .menu-desctop {
     display: none;
   }
 }
 
-header .menu-desctop .item:not(:last-child) {
+.header .menu-desctop .item:not(:last-child) {
   margin-right: 35px;
 }
 
-header .menu-desctop .link {
+.header .menu-desctop .link {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
@@ -426,7 +426,7 @@ header .menu-desctop .link {
   color: #FFFFFF;
 }
 
-header .menu-desctop .link.current {
+.header .menu-desctop .link.current {
   color: #D41443;
 }
 
@@ -453,7 +453,7 @@ header .menu-desctop .link.current {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1120px) {
   .container .product-description {
     font-size: 30px;
     line-height: 34px;
@@ -479,41 +479,29 @@ header .menu-desctop .link.current {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1120px) {
   .container .product-title {
     font-size: 58px;
     line-height: 66px;
+    margin-bottom: 259px;
   }
 }
 
 .container .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding-left: 34px;
-    padding-right: 34px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container .products {
-    padding-left: 115px;
-    padding-right: 115px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -533,7 +521,7 @@ header .menu-desctop .link.current {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1120px) {
   .container .products .item {
     width: calc((100%-3*25px)/3);
     margin: 12.5px;
@@ -562,7 +550,7 @@ header .menu-desctop .link.current {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1120px) {
   .container .products .item-name {
     font-size: 30px;
     line-height: 34px;
@@ -623,7 +611,7 @@ header .menu-desctop .link.current {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1120px) {
   .container .products .img-ice {
     -webkit-transform: translateY(-62%);
             transform: translateY(-62%);

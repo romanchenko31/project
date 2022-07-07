@@ -15,71 +15,75 @@
 </head>
 <body>
     <header>
-      <nav>
-        <a class="logo" href="index.html">
-            <img src="./image/logo.png" alt="logo">
-        </a>
-        <ul class="menu-desctop">
-          <li class="item"><a class="link current" href="index.html">Home</a></li>
-          <li class="item"><a class="link" href="#">About us</a></li>
-          <li class="item"><a class="link" href="#">How it’s made?</a></li>
-          <li class="item"><a class="link" href="#">Our products</a></li>
-          <li class="item"><a class="link" href="#">Contact</a></li>
-        </ul>
-        <div class="menu">
-          <button class="menu-mobile">
-            <svg width="20" height="12">
-              <use href="./image/header_mobile.svg#icon-Burger"></use>
-            </svg>
-          </button>
-          <button class="buttom-tablet">Buy now</button>
+      <div class="header-wrap">
+        <div class="header">
+          <nav>
+            <a class="logo" href="index.html">
+                <img src="./image/logo.png" alt="logo">
+            </a>
+            <ul class="menu-desctop">
+              <li class="item"><a class="link current" href="index.html">Home</a></li>
+              <li class="item"><a class="link" href="#">About us</a></li>
+              <li class="item"><a class="link" href="#">How it’s made?</a></li>
+              <li class="item"><a class="link" href="#">Our products</a></li>
+              <li class="item"><a class="link" href="#">Contact</a></li>
+            </ul>
+            <div class="menu">
+              <button class="menu-mobile">
+                <svg width="20" height="12">
+                  <use href="./image/header_mobile.svg#icon-Burger"></use>
+                </svg>
+              </button>
+              <button class="buttom-tablet">Buy now</button>
+            </div>
+          </nav>
+          <div class="ellipse"></div>
+          <picture class="ice">
+            <source srcset="./image/ice-desctop.png" media="(min-width:1120px)">     
+            <source srcset="./image/ice-tablet.png" media="(min-width:768px)" >
+            <source srcset="./image/ice-cream-mobil.png" media="(min-width:320px)">
+            <img src="./image/ice-cream-mobil.png" alt="ice-cream">
+          </picture>
+          <h1>
+            ice cream <br> made with<br><span> passion <span>
+          </h1>
+          <ul class="list">
+            <li class="item"><button>Products</button></li>
+            <li class="item"><button>How it’s made?</button></li>
+          </ul>
+          <div class="tablet-style">
+            <picture  class="milk">
+              <source srcset="./image/milk1200.png" media="(min-width:1120px)">
+              <source srcset="./image/milk.png" media="(min-width:768px)">        
+              <img src="./image/milk.png"  alt="milk">
+            </picture>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="arrow">
+              <picture>
+                <source srcset="./image/arrow1200.png" media="(min-width:1120px)">
+                <source srcset="./image/arrow-right.png" media="(min-width:768px)">     
+                <img src="./image/arrow-right.png" alt="раскрыть текст">
+              </picture>         
+            </button>
+            <picture class="girl">
+              <source srcset="./image/girlDesctop.png" media="(min-width:1120px)">
+              <source srcset="./image/girl.png 1x, ./image/girl@2x.png 2x" media="(min-width:768px)">
+              <img class="girl-ice" src="./image/girl.png" alt="girl">
+            </picture>
+            <ul class="count">
+              <li class="item">
+                <svg class="cafe" width="43" height="44">
+                  <use href="./image/svg-header.svg#icon-Group-22"></use>
+                </svg>
+              </li>
+              <li class="item">
+                <svg class="food" width="51" height="43">
+                  <use href="./image/svg-header.svg#icon-Group-23"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-      <div class="ellipse"></div>
-      <picture class="ice">
-        <source srcset="./image/ice-desctop.png" media="(min-width:1280px)">     
-        <source srcset="./image/ice-tablet.png" media="(min-width:768px)" >
-        <source srcset="./image/ice-cream-mobil.png" media="(min-width:320px)">
-        <img src="./image/ice-cream-mobil.png" alt="ice-cream">
-      </picture>
-      <h1>
-        ice cream <br> made with<br><span> passion <span>
-      </h1>
-      <ul class="list">
-        <li class="item"><button>Products</button></li>
-        <li class="item"><button>How it’s made?</button></li>
-      </ul>
-      <div class="tablet-style">
-        <picture  class="milk">
-          <source srcset="./image/milk1200.png" media="(min-width:1280px)">
-          <source srcset="./image/milk.png" media="(min-width:768px)">        
-          <img src="./image/milk.png"  alt="milk">
-        </picture>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button class="arrow">
-          <picture>
-            <source srcset="./image/arrow1200.png" media="(min-width:1280px)">
-            <source srcset="./image/arrow-right.png" media="(min-width:768px)">     
-            <img src="./image/arrow-right.png" alt="раскрыть текст">
-          </picture>         
-        </button>
-        <picture class="girl">
-          <source srcset="./image/girlDesctop.png" media="(min-width:1280px)">
-          <source srcset="./image/girl.png 1x, ./image/girl@2x.png 2x" media="(min-width:768px)">
-          <img class="girl-ice" src="./image/girl.png" alt="girl">
-        </picture>
-        <ul class="count">
-          <li class="item">
-            <svg class="cafe" width="43" height="44">
-              <use href="./image/svg-header.svg#icon-Group-22"></use>
-            </svg>
-          </li>
-          <li class="item">
-            <svg class="food" width="51" height="43">
-              <use href="./image/svg-header.svg#icon-Group-23"></use>
-            </svg>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -101,7 +105,7 @@
                 <img src="./image/arrow40.png" alt="стрелка">
               </button>
               <picture class="img-ice">
-                <source srcset="./image/home1280.png" media="(min-width:1280px)">
+                <source srcset="./image/home1280.png" media="(min-width:1120px)">
                 <source srcset="./image/home768.png" media="(min-width:768px)">
                 <source srcset="./image/home320.png" media="(min-width:320px)">
                 <img src="./image/home320.png" alt="ice">
@@ -121,7 +125,7 @@
                 <img src="./image/arrow40.png" alt="стрелка">
               </button>
               <picture class="img-ice">
-                <source srcset="./image/dring1280.png" media="(min-width:1280px)">
+                <source srcset="./image/dring1280.png" media="(min-width:1120px)">
                 <source srcset="./image/dring768.png" media="(min-width:768px)">
                 <source srcset="./image/dring320.png" media="(min-width:320px)">
                 <img src="./image/dring320.png" alt="dring">
@@ -141,7 +145,7 @@
                 <img src="./image/arrow40.png" alt="стрелка">
               </button>
               <picture class="img-ice">
-                <source srcset="./image/milkshakes1280.png" media="(min-width:1280px)">
+                <source srcset="./image/milkshakes1280.png" media="(min-width:1120px)">
                 <source srcset="./image/milkshakes768.png" media="(min-width:768px)">
                 <source srcset="./image/milkshakes320.png" media="(min-width:320px)">
                 <img src="./image/milkshakes320.png" alt="milkshakes">
