@@ -1,6 +1,18 @@
 .product-made{
     background-color: #FFF5F6;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width:767px){
+        background-image: url(../../image/sectionbg1.png);
+
+    }
+
+    @media screen and(min-width:1120px) {
+        background-image:url(../../image/sectionbg2.png);
+    }
+
 }
 .read-more{
     display: inline-flex;
@@ -59,20 +71,6 @@
     }
 }
 
- .img-milk{  
-    @media screen and(min-width:768px)and(max-width:1119px) {
-        display: none;
-    }
-}
-
-.img-milk {
-    position: absolute;
-    top: 730px;
-
-    @media screen and(min-width:1200px) {
-        top:342px;
-    }
-}
 
 .list-made{
     margin-top: 39px;

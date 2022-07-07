@@ -621,6 +621,20 @@ header {
 .product-made {
   background-color: #FFF5F6;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .product-made {
+    background-image: url(../../image/sectionbg1.png);
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .product-made {
+    background-image: url(../../image/sectionbg2.png);
+  }
 }
 
 .read-more {
@@ -690,23 +704,6 @@ header {
 @media (min-width: 768px) {
   .made-description.color {
     margin-bottom: 62px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1119px) {
-  .img-milk {
-    display: none;
-  }
-}
-
-.img-milk {
-  position: absolute;
-  top: 730px;
-}
-
-@media screen and (min-width: 1200px) {
-  .img-milk {
-    top: 342px;
   }
 }
 
