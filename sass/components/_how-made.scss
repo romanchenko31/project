@@ -1,0 +1,124 @@
+.product-made{
+    background-color: #FFF5F6;
+    position: relative;
+}
+.read-more{
+    display: inline-flex;
+        background-color: $colorWhite;
+        color: $colorText;
+        align-items: center;
+        padding: 15px 40px;
+        border-radius: 22px;
+    
+        &:hover {
+            background-color: $colorText;
+            color: $colorWhite;
+        }
+    
+        &:after {
+            content: "";
+            background-image: url(../../image/Vector.png);
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 10px;
+            margin-left: 12px;
+    
+        }
+}
+.product-title.made{
+    margin-bottom: 25px;
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 50px;
+    }
+}
+
+.made-description{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: #000000;
+    margin-top: 46px;
+    
+    @media (min-width:768px){
+        font-size: 14px;
+        line-height: 176%;
+    }
+    @media (min-width:1200px){
+        font-size: 16px;
+    }
+}
+
+.made-description.color{
+    color: #907E82;
+    margin-bottom: 17px;
+    
+    @media (min-width:768px) {
+        margin-bottom: 62px;
+    }
+}
+
+ .img-milk{  
+    @media screen and(min-width:768px)and(max-width:1119px) {
+        display: none;
+    }
+}
+
+.img-milk {
+    position: absolute;
+    top: 766px;
+
+    @media screen and(min-width:1200px) {
+        top:342px;
+    }
+}
+
+.list-made{
+    margin-top: 39px;
+
+    @media (min-width:768px) {
+        display: flex;
+    }
+
+    .item{
+        margin-top: 38px;
+
+        @media screen and (min-width:1120px) {
+            &:not(:last-child){
+                margin-right: 40px;
+            }
+        }
+
+        p{
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 170%;
+            color: #000000;
+        }
+    }
+
+    h2{
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color:$colorText;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.how-made{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media screen and(min-width:768px) {
+    .wrap-made {
+        display: flex;
+    }
+}
