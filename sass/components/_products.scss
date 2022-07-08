@@ -82,6 +82,7 @@
             }
             &:nth-child(3){
                 background-color: #C2E297;
+                margin-bottom: 0;
             }
         }
    
@@ -134,6 +135,7 @@
         .product-arrow{
             display: block;
             margin: 0 auto;
+            background-color: transparent;
         }
 
         .img-ice{

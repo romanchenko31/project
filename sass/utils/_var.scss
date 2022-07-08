@@ -8,6 +8,7 @@
 
         margin: 0 auto;
 
+
         @media screen and(min-width:320px) {
                 width: 320px;
             }
@@ -21,7 +22,9 @@
             }
 
     }
-
+.container{
+    padding-bottom: 145px;
+}
     ul,
     li,
     h1,
@@ -38,7 +41,6 @@
     }
     button {
         outline: none;
-        background-color: transparent;
         border: none;
         cursor: pointer;
     }
