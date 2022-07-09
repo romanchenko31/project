@@ -437,11 +437,7 @@ header {
   color: #D41443;
 }
 
-.container {
-  padding-top: 121px;
-}
-
-.container .product-description {
+.product-description {
   color: #FFA5BA;
   font-family: 'Titan One';
   font-weight: 400;
@@ -454,20 +450,20 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .container .product-description {
+  .product-description {
     font-size: 26px;
     line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .container .product-description {
+  .product-description {
     font-size: 30px;
     line-height: 34px;
   }
 }
 
-.container .product-title {
+.product-title {
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 34px;
@@ -480,18 +476,22 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .container .product-title {
+  .product-title {
     font-size: 48px;
     line-height: 55px;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  .container .product-title {
+  .product-title {
     font-size: 58px;
     line-height: 66px;
     margin-bottom: 259px;
   }
+}
+
+.container {
+  padding-top: 121px;
 }
 
 .container .products {
@@ -1086,5 +1086,177 @@ header {
   .work-time .card-contacts a {
     font-size: 16px;
   }
+}
+
+.work-time .button-nav {
+  margin-top: 54px;
+  padding-bottom: 113px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .work-time .button-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.work-time .button-nav .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-time .button-nav .item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.work-time .button-nav button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 40px;
+  border-radius: 22px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #D41443;
+}
+
+.work-time .button-nav button svg {
+  width: 5px;
+  height: 10px;
+  stroke: #fff;
+}
+
+.work-time .button-nav .item:not(:first-child) button {
+  background-color: #FFFFFF;
+  color: #D41443;
+}
+
+.work-time .button-nav .item:not(:first-child) button svg {
+  stroke: #D41443;
+}
+
+footer {
+  background-color: #FFF5F6;
+}
+
+footer .adress {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 450px) {
+  footer .adress {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .adress {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  footer .adress {
+    width: 1050px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .adress .footer-head {
+    width: 340px;
+    text-align: left;
+  }
+  footer .adress .footer-head .product-description,
+  footer .adress .footer-head .product-title {
+    text-align: left;
+  }
+}
+
+footer .adress .footer-adress {
+  padding-bottom: 43px;
+}
+
+footer .adress .footer-adress .footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 50px;
+}
+
+footer .adress .footer-adress .footer-icon svg {
+  fill: #fea5bb;
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+footer .adress .footer-adress .footer-icon svg:hover {
+  fill: #D41443;
+}
+
+footer .adress .footer-adress .footer-icon .item:not(:last-child) {
+  margin-right: 28.24px;
+}
+
+footer .adress .footer-adress p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  footer .adress .footer-adress p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1120px) {
+  footer .adress .footer-adress p {
+    font-size: 16px;
+  }
+}
+
+footer .adress .footer-adress p a {
+  color: #D41443;
+}
+
+footer span {
+  display: block;
+  border-top: 1px solid #E1E1E1;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 152%;
+  color: #907E82;
+  padding: 25px 80px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
