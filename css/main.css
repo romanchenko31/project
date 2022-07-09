@@ -719,6 +719,11 @@ header {
 
 .list-made {
   margin-top: 39px;
+  text-align: center;
+}
+
+.list-made img {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -896,11 +901,28 @@ header {
           transform: translateY(-85px);
 }
 
+@media (min-width: 450px) {
+  .work-time .card {
+    width: 320px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-time .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .work-time .card {
+    width: 1050px;
   }
 }
 

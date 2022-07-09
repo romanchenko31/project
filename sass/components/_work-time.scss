@@ -6,9 +6,19 @@
     .card {
         padding: 0 50px;
         transform: translateY(-85px);
+        @media(min-width:450px) {
+            width: 320px;
+            margin: 0 auto;
+            align-items: center;
+        }
 
         @media screen and (min-width:768px) {
             display: flex;
+            width: 700px;
+        }
+
+        @media screen and (min-width:1120px) {
+            width: 1050px;
         }
 
         .item:not(:last-child){

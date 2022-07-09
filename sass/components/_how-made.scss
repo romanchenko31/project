@@ -74,6 +74,11 @@
 
 .list-made{
     margin-top: 39px;
+    text-align: center;
+
+    img{
+        margin: 0 auto;
+    }
 
     @media (min-width:768px) {
         display: flex;
