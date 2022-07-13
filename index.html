@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+<body>
+    <header>
+      <div class="burger-menu is-hidden" data-modal>
+        <button class="close" data-modal-close>
+          <svg width="20" height="14">
+            <use href="./image/header_mobile.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="buy">Buy now</button>
+        <ul class="menu-desctop">
+          <li class="item"><a class="link current" href="index.html">Home</a></li>
+          <li class="item"><a class="link" href="#">About us</a></li>
+          <li class="item"><a class="link" href="#">How it’s made?</a></li>
+          <li class="item"><a class="link" href="#">Our products</a></li>
+          <li class="item"><a class="link" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-wrap">
+        <div class="header">
+          <nav>
+            <a class="logo" href="index.html">
+                <img src="./image/logo.png" alt="logo">
+            </a>
+              
+            <div class="menu">
+              <button class="menu-mobile"  data-modal-open>
+                <svg width="20" height="14">
+                  <use href="./image/header_mobile.svg#icon-Burger"></use>
+                </svg>
+              </button>
+              <button class="buttom-tablet">Buy now</button>
+            </div>
+          </nav>
+          <div class="ellipse"></div>
+          <picture class="ice">
+            <source srcset="./image/ice-desctop.png" media="(min-width:1120px)">     
+            <source srcset="./image/ice-tablet.png" media="(min-width:768px)" >
+            <source srcset="./image/ice-cream-mobil.png" media="(min-width:320px)">
+            <img src="./image/ice-cream-mobil.png" alt="ice-cream">
+          </picture>
+          <h1>
+            ice cream <br> made with<br><span> passion <span>
+          </h1>
+          <ul class="list">
+            <li class="item"><button>Products</button></li>
+            <li class="item"><button>How it’s made?</button></li>
+          </ul>
+          <div class="tablet-style">
+            <picture  class="milk">
+              <source srcset="./image/milk1200.png" media="(min-width:1120px)">
+              <source srcset="./image/milk.png" media="(min-width:768px)">        
+              <img src="./image/milk.png"  alt="milk">
+            </picture>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="arrow">
+              <picture>
+                <source srcset="./image/arrow1200.png" media="(min-width:1120px)">
+                <source srcset="./image/arrow-right.png" media="(min-width:768px)">     
+                <img src="./image/arrow-right.png" alt="раскрыть текст">
+              </picture>         
+            </button>
+            <picture class="girl">
+              <source srcset="./image/girlDesctop.png" media="(min-width:1120px)">
+              <source srcset="./image/girl.png 1x, ./image/girl@2x.png 2x" media="(min-width:768px)">
+              <img class="girl-ice" src="./image/girl.png" alt="girl">
+            </picture>
+            <ul class="count">
+              <li class="item">
+                <svg class="cafe" width="43" height="44">
+                  <use href="./image/svg-header.svg#icon-Group-22"></use>
+                </svg>
+              </li>
+              <li class="item">
+                <svg class="food" width="51" height="43">
+                  <use href="./image/svg-header.svg#icon-Group-23"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <p class="product-description">100% natural</p>
+          <h2 class="product-title">products</h2>
+          <ul class="products">
+            <li class="item">
+              <h3 class="item-name">ice cream</h3>
+              <ul class="menu-cicle">
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+              </ul>
+              <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
+              aliqua facilisis.</p>
+              <button class="product-arrow">
+                <img src="./image/arrow40.png" alt="стрелка">
+              </button>
+              <picture class="img-ice">
+                <source srcset="./image/home1280.png" media="(min-width:1120px)">
+                <source srcset="./image/home768.png" media="(min-width:768px)">
+                <source srcset="./image/home320.png" media="(min-width:320px)">
+                <img src="./image/home320.png" alt="ice">
+              </picture>
+            </li>
+            <li class="item">
+              <h3 class="item-name">ice coffee</h3>
+              <ul class="menu-cicle">
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+              </ul>
+              <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et. dolore magna
+                aliqua facilisis.</p>
+              <button class="product-arrow">
+                <img src="./image/arrow40.png" alt="стрелка">
+              </button>
+              <picture class="img-ice">
+                <source srcset="./image/dring1280.png" media="(min-width:1120px)">
+                <source srcset="./image/dring768.png" media="(min-width:768px)">
+                <source srcset="./image/dring320.png" media="(min-width:320px)">
+                <img src="./image/dring320.png" alt="dring" width="auto">
+              </picture>
+            </li>
+            <li class="item">
+              <h3 class="item-name">milkshakes</h3>
+              <ul class="menu-cicle">
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+                <li class="cicle"><img src="./image/EllipseLittle.png"></li>
+              </ul>
+              <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et. dolore magna
+                aliqua facilisis.</p>
+              <button class="product-arrow">
+                <img src="./image/arrow40.png" alt="стрелка">
+              </button>
+              <picture class="img-ice">
+                <source srcset="./image/milkshakes1280.png" media="(min-width:1120px)">
+                <source srcset="./image/milkshakes768.png" media="(min-width:768px)">
+                <source srcset="./image/milkshakes320.png" media="(min-width:320px)">
+                <img src="./image/milkshakes320.png" alt="milkshakes" width="auto">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product-made">
+        <div class="co000ntainer">
+          <p class="product-description">tradition and love</p>
+          <h2 class="product-title made">how it’s made?</h2>
+          <div class="wrap-made">
+            <picture class="img-ice">
+              <source srcset="./image/cow1120.png" media="(min-width:1120px)">
+              <source srcset="./image/cow768.png" media="(min-width:768px)">
+              <source srcset="./image/cow320.png" media="(min-width:320px)">
+              <img src="./image/cow320.png" alt="cow" width="auto">
+            </picture>
+            <div class="how-made">
+              <p class="made-description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+              Maecenas eleifend erat at justo fringilla.</p>
+              <p class="made-description color">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+              Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.      
+              Aliquam erat volutpat. Aenean accumsan.</p>
+              <button class="read-more">Read more</button>
+            </div>
+          </div>
+          <ul class="list-made">
+            <li class="item">
+              <img src="./image/icon1.png">
+              <h2>721</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="item">
+              <img src="./image/icon2.png">
+              <h2>16kg</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="item">
+              <img src="./image/icon3.png">
+              <h2>84</h2>
+              <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <picture class="img-face">
+            <source srcset="./image/picture1120.jpg" media="(min-width:1120px)">
+            <source srcset="./image/picture768.jpg" media="(min-width:768px)">
+            <source srcset="./image/picture320.jpg" media="(min-width:320px)">
+            <img src="./image/picture320.jpg" alt="face">
+          </picture>
+          <img class="face" src="./image/testimonial.png">
+          <p class="comment">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+          congue. Lorem ipsum primis in nibh vel risus.</p>
+          <ul class="menu-elipse">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+          </ul>
+          <h3 class="comment-city">Emily, Los Angeles</h3>
+          <ul class="menu-elipse size">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="work-time">
+          <ul class="card">
+            <li class="item">
+                <button class="cafe">CAFE</button>
+                <div class="card-city">
+                  <h3>Chicago</h3>
+                  <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <ul class="card-time">
+                  <li>
+                    <h3>Monday - Friday</h3>
+                    <p>06:00 AM - 10:00 PM</p>
+                  </li>
+                  <li>
+                  <h3>Saturday - Sunday</h3>
+                  <p>08:00 AM - 16:00 PM</p>
+                  </li>
+                </ul>
+                <ul class="card-contacts">
+                  <li>
+                    <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                  </li>
+                  <li>  
+                    <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="item">
+              <button class="cafe">FOODTRUCK</button>
+              <div class="card-city">
+                <h3>Los Angeles</h3>
+                <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </div>
+              <ul class="card-time">
+                <li>
+                  <h3>Monday - Friday</h3>
+                  <p>06:00 AM - 10:00 PM</p>
+                </li>
+                <li>
+                  <h3>Saturday - Sunday</h3>
+                  <p>08:00 AM - 16:00 PM</p>
+                </li>
+              </ul>
+              <ul class="card-contacts">
+                <li>
+                  <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                </li>
+                <li>
+                  <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+                <button class="cafe">CAFE</button>
+                <div class="card-city">
+                  <h3>Los Angeles</h3>
+                  <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+                <ul class="card-time">
+                  <li>
+                    <h3>Monday - Friday</h3>
+                    <p>06:00 AM - 10:00 PM</p>
+                  </li>
+                  <li>
+                    <h3>Saturday - Sunday</h3>
+                    <p>08:00 AM - 16:00 PM</p>
+                  </li>
+                </ul>
+                <ul class="card-contacts">
+                  <li>
+                    <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                  </li>
+                  <li>
+                    <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+          <ul class="button-nav">
+            <li class="item">
+              <button>Our Locations
+                <svg>
+                  <use href="./image/vec.svg#icon-Vector-1"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="item"><button>Franchise
+              <svg>
+                <use href="./image/vec.svg#icon-Vector-1"></use>
+              </svg>
+            </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="adress">
+        <div class="footer-head">
+          <p class="product-description">homemade ice cream made</p>
+          <h2 class="product-title made">how it’s made?</h2>
+        </div>
+        <div class="footer-adress">
+          <ul class="footer-icon">
+            <li class="item">
+              <svg width="32px" height="32px">
+                <use href="./image/vect.svg#icon-github"></use>
+              </svg>
+            </li>
+            <li class="item">
+              <svg width="32px" height="32px">
+                <use href="./image/vect.svg#icon-telegram"></use>
+              </svg>
+            </li>
+            <li class="item">
+              <svg width="32px" height="32px">
+                <use href="./image/vect.svg#icon-facebook"></use>
+              </svg>
+            </li>
+          </ul>
+          <p>Feel free to contact <a href="tel:+610383766284">+61 (0) 383 766 284</a></p>
+        </div>    
+        </div>
+        <span>© 2019 - IceCream.</br>
+          All Rights Reserved.
+        </span>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

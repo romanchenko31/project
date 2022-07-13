@@ -1,0 +1,334 @@
+
+header{
+    overflow: hidden;
+    background-color: $bgheader;
+}
+
+.header-wrap{
+    padding-top: 6px;
+
+    @media screen and (min-width:768px) {
+        padding-top:38px;
+    }
+}
+
+.header{
+    position: relative;
+
+ 
+
+    @media screen and(min-width:1120px) {
+        height: 627px;
+    }
+   
+
+    nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .logo {
+                display: inline-flex;
+            }
+
+            @media screen and (min-width:1120px){
+                .menu-mobile {
+                    display: none;
+                }
+            }
+                .menu-mobile{
+                    background-color: transparent;
+                }
+
+            .buttom-tablet{
+                display: none;
+            }
+            @media screen and (min-width:768px) {
+                
+                .menu {
+                    .menu-mobile {
+                        margin-right: 30px;
+                    }
+                }
+                
+                .buttom-tablet {
+                    display: inline-flex;
+                    background-color: $colorWhite;
+                    color: $colorText;
+                    align-items: center;
+                    padding: 15px 40px;
+                    border-radius: 22px;
+
+                    &:hover{
+                        background-color: $colorText;
+                        color: $colorWhite;
+                    }
+ 
+                    &:after {
+                        content: "";
+                        background-image: url(../../image/Vector.png);
+                        background-repeat: no-repeat;
+                        width: 8px;
+                        height: 10px;
+                        margin-left: 12px;
+     
+                    }
+                   
+                }
+
+                
+           }
+            
+    }
+    
+    .ellipse {
+        background-color: $colorEllipse;
+        width: 346px;
+        height: 344px;
+        border-radius: 50%;
+        margin-top: 27px;
+        margin-left: 16px;
+        margin-bottom:75px ;
+
+        @media screen and (min-width:768px) {
+            margin-top:-45px;
+            margin-left: 273px;
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width:1120px) {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 538px;
+            height: 538px;
+            bottom: 75px;
+            right: 168px;
+        }
+        
+    }
+
+
+        .ice{
+            position: absolute;
+            top:92px;
+            left: 117px;
+
+            @media screen and (min-width:768px) {
+                top:63px;
+                left: 378px;
+            }
+
+            @media screen and (min-width:1120px) {
+                top:108px;
+                left: 594px;
+            }
+
+
+        }
+
+        .list{
+            position: absolute;
+            top:313px;
+            display:flex;
+
+            @media screen and(min-width:768px) {
+                top:202px;
+            }
+
+            @media screen and(min-width:1120px) {
+                top:333px;
+                left: 115px;
+            }
+
+            .item{
+                border-radius: 20px;
+
+                &:hover button{
+                    background-color: $colorText;
+                    color:$colorWhite;
+                }
+                
+                & button{
+                    outline: none;
+                    border-radius: 20px;
+                    padding: 9px 16px;
+                    border: 1px solid transparent;
+                    background-color: $colorWhite;
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 8px;
+                    line-height: 10px;
+                    text-align: center;
+                    color: $colorText;
+                        
+                    @media screen and(min-width:1120px) {
+                        padding: 15px 21px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            .item:not(:last-child){
+                margin-right: 8px;
+            }
+
+
+        }
+
+    
+
+    h1{
+        position: absolute;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $colorWhite;
+        top:193px;
+
+
+        @media screen and (min-width:768px) {
+                top:102px;
+                font-size: 22px;
+                line-height: 25px;
+        }
+        
+        span{           
+            font-size: 48px;
+            line-height: 96.5%;
+            /* or 46px */
+            color: $colorText;
+
+            @media screen and (min-width:768px) {
+              font-size: 34px;
+              line-height: 90.5%;
+
+            }
+        } 
+        
+        @media screen and(min-width:1120px) {
+            font-size: 38px;
+            line-height: 44px;
+            top:171px;
+            left: 115px;
+
+            span{
+                font-size: 58px;
+                line-height: 90.5%;
+            }
+        }
+    }      
+
+    .tablet-style{
+        display: none;
+       
+
+        @media screen and (min-width:768px) {
+
+            display: block;
+             
+            .milk{
+                max-width: 100%;;
+                left:34px ;
+                bottom: 28px;
+                position: absolute;
+
+                @media screen and (min-width:1120px) {
+                    left: 77px;
+                    bottom: 45px;
+                }
+
+                
+            }
+            .description{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 150%;
+                margin: 0;
+                padding: 0;
+                width: 114px;
+                position: absolute;
+                left: 154px;
+                bottom: 59px;
+                color: $colorWhite;
+
+                @media screen and(min-width:1120px) {
+                    left: 295px;
+                    bottom: 102px;
+                    font-size: 14px;
+                    line-height: 140%;
+                    width: 200px;
+                }
+            }
+            .arrow{
+                max-width: 100%;
+                position: absolute;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                margin: 0;
+                padding:0;
+                bottom: 34px;
+                left: 154px;
+
+                @media screen and(min-width:1120px) {
+                        left: 295px;
+                        bottom: 56px;
+                }
+
+            }
+
+            .girl{
+                max-width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            .count{
+                position: absolute;
+                top:94px;
+                right: 0px;
+
+                .item{
+                    text-align: right;
+
+                    .cafe{
+                        width: 43px;
+                        height: 44px;
+                        @media screen and(min-width:1120px) {
+                                width: 72px;
+                                height: 77px;
+                        }
+
+                    }
+
+                    .food{
+                        width: 51px;
+                        height: 44px;
+                        @media screen and(min-width:1120px) {
+                                width: 92px;
+                                height: 76px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+    
+    
+
+}
+
+
+
